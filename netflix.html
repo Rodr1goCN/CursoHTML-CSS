@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/58b828c7-f28e-4ac2-a1f5-1ef78e44c5e0/BR-pt-20230320-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+        }
+        #fundo{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.782);
+        }
+        #heading{
+            display: flex;
+            justify-content: space-between; /* fica ambos no canto da página e se tiver 3 palavras uma fica no meio / temos o space-around fica não tanto no canto da página / temos o space-evenly que fica mais para o centro da página*/
+            width: 80%;
+        }
+        div #heading {
+            margin: auto;
+        }
+        #heading h1{
+            margin: 15px 0 0 30px;
+            text-transform: uppercase;
+        }
+        #heading .na-direita{
+            margin: 15px 30px 0 0;
+            padding-top: 2px;
+        }
+        #heading h1 a{
+            color: red;
+            text-decoration: none;
+        }
+        .na-direita{
+            background-color: red;
+            border-radius: 5px;
+        }
+        .na-direita > a{
+            color: white;
+            text-decoration: none;
+            font-size: 0.6em;
+            padding: 15px;
+        }
+        .na-direita:hover{
+            background-color: rgb(193, 0, 0);
+            transition: 0.5s;
+        }
+        #txt-centro{
+            margin: 0 auto;
+        }
+        section{
+            position: relative;
+        }
+        #txt-centro{
+            width: 700px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 70%);
+            margin: 5px 0 0 0;
+            color: white;
+            font-size: 1.5em;
+        }
+        #h3{
+            font-size: 0.8em;
+            margin: 30px 0;
+        }
+        #h4{
+            font-size: 0.7em;
+            margin: 0 0 13px 0;
+        }
+        input{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-117%,134%);
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.738);
+            color: white;
+        }
+        input::placeholder{
+            color: rgba(255, 255, 255, 0.616);
+            padding: 10px;
+        }
+        p > a{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-26%,137%);
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 11px 30px;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main id="fundo">
+        
+        <div>
+            <header id="heading">
+                <h1 class="h1"><a href="#">Netflix</a></h1>
+        
+        
+                <h2 class="h1 na-direita"><a href="#">Entrar</a></h2>
+            </header>
+        </div>
+        <section>
+            <div id="txt-centro">
+                <h2 class="txt" id="h2">Filmes, séries e muito mais. Sem limites.</h2>
+                <h3 class="txt" id="h3">Assista onde quiser. Cancele quando quiser.</h3>
+                <h4 class="txt" id="h4">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h4>
+        
+                <form action="" method="post" autocomplete="on"><input type="email" name="Lemail" id="mail" autocomplete="email" placeholder="nome@domínio.com.br" required>
+                </form>
+                <p><a href="#">Vamos lá ></a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
