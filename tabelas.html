@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table td, table th{
+            padding: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.493);
+            text-align: left;
+        }
+
+        table{
+            border-collapse: collapse;
+            width:2000px;
+        }
+        table caption{
+            caption-side: top;
+            font-style: italic;
+            font-size: 15px;
+            text-align: left;
+        }
+        .tabela{
+            overflow-x: auto; /* Cria uma barra de rolagem somente na tabela */
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor.</p>
+    <div class="tabela">
+        <table>
+            <caption>
+                Descrição da tabela
+            </caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Títudo 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Corpo 1 e 2</td> <!-- colspan na mesma linha horizontal -->
+        
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td rowspan="2">Rodapé 1</td> <!-- rowspan na vertical -->
+                    <td>Rodapé 2</td>
+                    <td>Rodapé 3</td>
+                </tr>
+                <tr>
+                    
+                    <td>Rodapé 2</td>
+                    <td>Rodapé 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

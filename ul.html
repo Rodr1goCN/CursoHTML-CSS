@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unordered Lists</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        nav{
+            background-color: rgba(255, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none; /* Tira a bola/disco/quadrado das listas não ordenadas */
+            justify-content: left;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        nav  a{
+            text-decoration: none;
+            color: white;
+            padding:20px;
+            display: block;
+        }
+
+        nav a:hover{
+            background-color: rgba(0, 0, 0, 0.05);
+            transition: 0.7s;
+        }
+        main{
+            margin: auto;
+            width:90vw;
+            height: 100vh;
+        }
+
+        body{
+            background-color: rgba(255, 0, 0, 0.29);
+        }
+
+        main article{
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        main h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        main article p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        @media screen and (min-width: 798px){
+            main{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga illo cum ducimus tempore ab consequatur esse eius mollitia quia, minima asperiores sint id nulla enim maiores ad explicabo voluptatem, molestiae corporis amet, quae quis neque. Accusantium laboriosam commodi, cupiditate corporis iste id error magnam ad repellat fugit harum necessitatibus! Unde labore dolores blanditiis reiciendis ab! Laudantium architecto velit consequatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam deleniti aut enim accusamus reiciendis, optio iure consequuntur voluptate corporis maxime a exercitationem eos aspernatur autem aliquid voluptatem minus eius illo ratione voluptatum deserunt fugit quidem! Sapiente minus soluta expedita reprehenderit corporis sunt, nam eos officiis voluptatem dolor eius error ut iste harum ad quam placeat recusandae, libero nesciunt enim?
+            </p>
+        </article>
+    </main>
+</body>
+</html>
