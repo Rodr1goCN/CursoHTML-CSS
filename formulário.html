@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <section>
+            <h1>Cabeça</h1>
+            <p>O formulário</p>
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <label for="Cnome">Nome</label>
+                    <input type="text" name="Lnome" id="Cnome" placeholder="Seu nome" >
+                </p>
+                <p>
+                    <label for="Cmail">E-mail</label>
+                    <input type="email" name="Lmail" id="Cmail" placeholder="nome@domínio.com.br">
+                </p>
+                <p>
+                    <label for="Cpass">Senha</label>
+                    <input type="password" name="Lpass" id="Cpass" placeholder="Sua senha" required >
+                </p>
+                <p>
+                    <label for="Cnum">Número</label>
+                    <input type="number" name="Lnum" id="Cnum" placeholder="Digite um número" min="10" max="50" step="2">
+                </p>
+                <p>
+                    <label for="Crange">Range</label>
+                    <input type="range" name="Lrange" id="Crange" min="0" max="10" oninput="Lval.innerHTML = Number(Crange.value)" list="tickmarks">
+                    <output id="Lval">5</output>
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50" label="50%">
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100" label="100%">
+                        </datalist>
+                </p>
+                <p>
+                    <p>
+                        <label for="Csel">Selecione alguma opção</label>
+                        <select id="Csel" name="Lsel" >
+                            <optgroup label="teste">
+                                <option value="qualquer coisa 1" label="label 1"></option>
+                                <option value="qualquer coisa 2" label="label 2"></option>
+                                <option value="qualquer coisa 3" label="label 3"></option>
+                                <option value="qualquer coisa 4" label="label 4"></option>
+                                <option value="qualquer coisa 5" label="label 5"></option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </p>
+                <p>
+                    <label for="Ctex">Escreva seu texto</label>
+                    <textarea name="Ltex" id="Ctex" cols="30" rows="2"></textarea>
+                </p>
+                <p>
+                    <label for="Cdev">Sou um desenvolvedor?</label><br>
+                    <input type="checkbox" name="Ldev" id="Cdev" value="sim"> <!-- no caso do value="sim" pode usar no checkbox pois o valor ira como sim para o backend -->
+                </p>
+                <p>
+                    Gênero: <br>
+                    <label for="Cmas">Masculino</label>
+                    <input type="radio" name="Lmas" id="Cmas"><br>
+                    <label for="Cfem">Feminino</label>
+                    <input type="radio" name="Lmas" id="Cfem"><br>
+                    <label for="Outro_Outra">Outro ou Outra</label>
+                    <input type="radio" name="Lmas" id="Outro_Outra">
+                </p>
+                <p>
+                    <label for="Cdate">Data</label>
+                    <input type="date" name="Ldate" id="Cdate" value="2023-03-28"> <!-- podemos definir um valor mas a data tem que ser |ano / mes / dia| -->
+                </p>
+                <p>
+                    <label for="Cdates">Data e Hora</label>
+                    <input type="datetime-local" name="Ldate" id="Cdates" value="2023-03-28T17:52"> <!-- podemos definir um valor mas a data e hora tem que ser |ano / mes / diaT17:52|  -->
+                </p>
+                <p>
+                    <label for="Chora">Hora</label>
+                    <input type="time" name="Ldate" id="Chora" value="17:52:23"><!-- podemos definir um valor na hora, coloca-se também os segundos |17:52:23| -->
+                </p>
+                <p>
+                    <label for="Ccor">Cores</label>
+                    <input type="color" name="Lnome" id="Ccor" value="#eeeeee">
+                </p>
+                <p>
+                    <label for="Cfile">Nome</label>
+                    <input type="file" name="Lfile" id="Cfile" accept=".jpg, .png" multiple> <!-- podemos colocar para buscar multiplos arquivos, ex: .jpg, .png e adicionar o 'multiple' para selicionar multiplos arquivos -->
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </fieldset>
+        </section>
+    </form>
+</body>
+</html>
