@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* especificidade
+        ID      Classes, atributos e pseudo-classes      Elementos e pseudo-elementos */
+        li::after{
+            content: ' @';
+        }
+        li::before{
+            content: '® ';
+        }
+        p::first-letter{
+            font-size: 70px;
+            float: left;
+            margin-right: 10px;
+        }
+        p::first-line{
+            background-color: aqua;
+        }
+        p::selection{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione saepe eos velit, vero quidem? Fugit incidunt quis hic non neque rem! Molestias ullam temporibus incidunt vel enim, sunt reiciendis ex repellendus exercitationem quis accusantium dolore blanditiis amet sequi nisi illo tempore error ratione voluptatum totam. Odit fuga, architecto qui nihil cum eius corrupti, eum pariatur, repellendus assumenda labore tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ratione corrupti aspernatur illum officiis incidunt dolor accusantium similique accusamus quo explicabo praesentium deleniti, nihil modi quia sint deserunt ducimus! Fugit, eligendi atque maiores eius laborum, non sit optio molestiae necessitatibus quos dolorum eum ea officiis? Illo culpa dolor corrupti eveniet cupiditate. Autem necessitatibus corporis optio incidunt rerum perferendis, eos quos, asperiores omnis animi fugiat veritatis dolore. Excepturi odit impedit reprehenderit rem dolorum quod possimus iure vitae consequatur magni tenetur debitis, modi accusantium voluptatibus! Magnam voluptatem ducimus culpa porro dolor nisi, odit quod perferendis, sed, possimus veritatis sit! Exercitationem quidem a quibusdam quae vero laborum deserunt maiores doloribus atque. Minus officia temporibus magni dolorum, ex sit iusto alias laborum repellat! Vero recusandae, blanditiis pariatur aut voluptas reiciendis repellat atque? Tempore recusandae eligendi iste, non repudiandae ipsa molestiae quam commodi possimus, inventore alias quod voluptatibus doloremque quibusdam? Voluptas dicta numquam modi voluptatibus.</p>
+</body>
+</html>

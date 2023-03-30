@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <style>
+        input:checked + h1{
+            background-color: green;
+        }
+        input:not(:checked) +h1{
+            background-color: yellow;
+        }
+        p:not(.meio){
+            color: blue;
+        }
+        li:nth-child(odd){
+            background-color: darkcyan;
+        }
+        li:nth-child(even){
+            background-color: darkgoldenrod;
+        }
+        li:nth-child(3n+5){
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="">
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at laudantium quisquam quasi ipsa quae! Sit quam atque obcaecati soluta.</p>
+    <p class="meio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat voluptas quae perferendis debitis et earum obcaecati aspernatur dolorem, dolore distinctio. Nesciunt nobis tempora placeat totam, consectetur molestiae eligendi incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis dignissimos eius quam explicabo quas neque sint aut porro, quia saepe? Error dignissimos ut iure ratione quod?</p>
+    <nav>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </nav>
+</body>
+</html>
