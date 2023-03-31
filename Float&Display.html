@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid{
+            padding: 10px;
+        }
+
+        .grid::after{
+            display: block;
+            content: '';
+            clear: both;
+        } 
+
+        .grid .col{
+            float: right; /* com float as margens se somam */
+            height: 200px;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .grid .col-content{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            background-color: yellowgreen;
+        }
+       /*  p{
+            clear: right; /* pode usar o clear both para 'limpar' ambos os lados ou usar o .grid::after e usar o content: ''; display: block; e clear: both; */
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        <div class="col"><div class="col-content">conteúdo</div></div>
+        
+       
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit veniam velit dolore repellat iure nostrum facere, aut officia accusantium temporibus iste numquam voluptatum, sequi illo pariatur quasi molestiae asperiores fuga, aperiam magnam facilis. Eum dolor accusamus ullam sapiente cupiditate magnam modi velit fugit ad. Dolore perferendis aut natus laudantium eius, reprehenderit, modi rem facere illo eveniet hic, molestiae autem?</p>
+</body>
+</html>
