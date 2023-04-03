@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medidas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+        .pai{
+            font-size: 15px;
+            background-color: aliceblue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .pai2{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(248, 204, 151);
+        }
+        .pai3{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(166, 243, 141);
+        }
+        
+        p{
+            font-size: 2em;/* o EM se baseia no elemento pai mais próximo, multiplicando-o pelo elemento pai. Ex.: 2em x 15px = 30px */
+        }
+        .texto{
+            font-size: 2.5rem ; /* o REM se baseia no elemento root da página, no caso o HTML, a conta é: se o root tiver o font-size 62.5% o REM sera multiplicado por 10, então o 3.5REM * 10 = 35px */
+        }
+    </style>
+</head>
+<body>
+    <a href="#um">Um</a>
+    <a href="#dois">Dois</a>
+    <a href="#tres">Três</a>
+    <div class="pai" id="um">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a fugiat, placeat facere dolorem iure quidem totam rem iusto quis est? At sed dolorum, pariatur assumenda hic dicta nesciunt, facilis repudiandae ratione eaque doloribus molestias odit accusantium? Praesentium reiciendis sit laborum assumenda magni, labore neque laudantium tenetur, ipsa vel maxime.</p>
+    </div>
+    <div class="pai2" id="dois">
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis quisquam deleniti, rerum adipisci aperiam repellendus voluptatem fugiat, quis maiores sunt vero incidunt sed sit natus. Vitae, odit unde veniam quibusdam illum exercitationem aliquam eos! Facilis fugiat eveniet, sit sunt eaque quidem nihil sed! Voluptatibus laboriosam alias est sed voluptatem suscipit, ipsa tempore voluptates unde labore illum officia dolores ex cumque laudantium amet recusandae, sunt eos reiciendis quas. Porro laudantium est totam sint quisquam, sequi rerum molestiae ducimus? Deleniti blanditiis velit maiores fugiat et magnam? Ullam, quibusdam enim, tenetur molestiae totam expedita placeat earum ex omnis reiciendis culpa odit beatae?</p>
+    </div>
+    <div class="pai3" id="tres">
+        <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis quisquam deleniti, rerum adipisci aperiam repellendus voluptatem fugiat, quis maiores sunt vero incidunt sed sit natus. Vitae, odit unde veniam quibusdam illum exercitationem aliquam eos! Facilis fugiat eveniet, sit sunt eaque quidem nihil sed! Voluptatibus laboriosam alias est sed voluptatem suscipit, ipsa tempore voluptates unde labore illum officia dolores ex cumque laudantium amet recusandae, sunt eos reiciendis quas. Porro laudantium est totam sint quisquam, sequi rerum molestiae ducimus? Deleniti blanditiis velit maiores fugiat et magnam? Ullam, quibusdam enim, tenetur molestiae totam expedita placeat earum ex omnis reiciendis culpa odit beatae?</p>
+    </div>
+</body>
+</html>
