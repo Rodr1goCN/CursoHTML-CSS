@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento - Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .pai{
+
+        }
+        .filha1, .filha2{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+            margin: 10px;
+        }
+        .filha1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -150px;
+            z-index: 1;
+        }
+        .filha2{
+            position: absolute; /* Já o position fixed, ele fica fixado na página, não importa se voce rola para baixa ou para cima */
+            background-color: red;
+            top: 50%;
+            left: 50%;
+        }
+        ul{
+            margin-top: 35px;
+            margin-left:20px ;
+            height: 150px;
+            overflow-y: auto;
+            width: 100px;
+        }
+        ul li.sticky{
+            position: sticky;
+            background-color: darkcyan;
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha1"></div>
+        <div class="filha2"></div>
+    </div>
+    <ul>
+        <li class="sticky">A</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li class="sticky">B</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+        <li class="sticky">C</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+        
+
+    </ul>
+</body>
+</html>
