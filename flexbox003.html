@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            background-color: yellow; 
+            justify-content: space-between; /* space-around (espaço envolta do elemento de maneira proporcional ) Space-between (espaço disponível entre cada um dos elementos) e space-evenly (espaço igual para todo mundo) */
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            flex-grow: 1; /* distribui o espaço para todos os elementos */
+            flex-basis: 320px; /* Ajusta o tamanho da caixa de conteúdo dando o tamanho definido a ela */
+            flex-shrink: 2; /* permite que ele diminua ou não o tamanho */
+            flex:; /* Essa é a shorthand e a ordem é grow, shrink e o basis*/
+            background-color: green;
+            width: 32%;
+            height: 200px;
+            color: white;
+            font-weight: bold;
+        }
+        .flex-item:nth-child(2){
+            flex: 10 1 320px; /* nesse caso o elemento 2 ira receber dez vezes mais espaço do que os outros */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">UM</div>
+        <div class="flex-item">DOIS</div>
+        <div class="flex-item">TRÊS</div>
+        <div class="flex-item">QUATRO</div>
+        <div class="flex-item">CINCO</div>
+    </div>
+</body>
+</html>

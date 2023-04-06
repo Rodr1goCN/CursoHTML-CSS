@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+        }
+        .flex-container{
+            display: flex;
+        }
+        .flex-item{
+            display: flex;
+            flex-direction:column ;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+        }
+        .galeria{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .img{
+            flex: 1 0 20%;
+            background-color: darkblue;
+            height: 50px;
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nostrum consequuntur veritatis corporis ducimus neque maxime eligendi et, in cumque non ex commodi voluptatum illum ipsam dolore vitae atque assumenda deserunt asperiores repellendus? Iusto perspiciatis.</p></div>
+        <div class="flex-item"><p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, cupiditate a quia veniam in autem iusto incidunt corrupti harum quisquam quasi voluptatibus excepturi nesciunt totam delectus unde qui maxime ut repudiandae. Vero, officiis omnis! lor
+        </p>
+        <div class="galeria">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
