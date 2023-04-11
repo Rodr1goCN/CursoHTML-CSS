@@ -83,6 +83,25 @@
             grid-row: span 3; /* com span 2 (um número maior, ocupa mais linhas) ela irá ocupar dois espaços para baixo */
             grid-column: span 2; /* igual ao row só que ocupa a grid da direita (seleciona quantas grid que irá ocupar) */
         }
+
+        /* GRID 6 */
+
+        .grid6{
+            display: grid;
+            grid-template-columns: [um] 1fr [dois] 1fr [tres] 1fr [quatro] 1fr;
+            grid-template-rows: [um] 1fr [dois] 1fr [tres] 1fr [quatro] 1fr;
+            grid-gap: 20px;
+        }
+        .grid6 div{
+            background-color: darkkhaki;
+            min-height: 100px;
+        }
+        .grid6 div:nth-child(3){
+            background-color: dodgerblue;
+           /*  grid-column: um / quatro; */ /* Começa no número (5) e na coluna 1 e vai até a coluna quatro */
+            /* grid-row:  span 3/ quatro; */ /* aqui ele vai criar tres linhas na vertical */
+            grid-area: um / um / tres / quatro ; /* linha que inicia / coluna que inicia / linha que termina / coluna que termina */
+        }
     </style>
 </head>
 <body>
@@ -163,6 +182,25 @@
         <div>17</div>
     </div>
     <div class="grid5 esp">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+    <div class="grid6 esp">
         <div>1</div>
         <div>2</div>
         <div>3</div>
