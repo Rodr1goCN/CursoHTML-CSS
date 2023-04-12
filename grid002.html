@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+        font-size: 1.2em;
+    }
+    .conteiner{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* adicionando AUTO as linhas se ajustam */
+        grid-template-columns: 60px 1fr ;
+        grid-template-areas: 
+        'header header'
+        'nav corpo'
+        'rodape rodape';
+    }
+    .grid div:nth-child(1){
+        grid-area: header;
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .grid div:nth-child(2){
+        background-color: bisque;
+        grid-area: nav;
+    }
+    .grid div:nth-child(3){
+        background-color: blueviolet;
+        grid-area: corpo;
+        color: white;
+    }
+    .grid div:nth-child(4){
+        background-color: brown;
+        grid-area: rodape;
+        color: white;
+    }
+    @media (max-width:768px) {
+        .grid {
+        display: grid;
+        grid-template-rows: auto; 
+        grid-template-columns: auto ;
+        grid-template-areas: 
+            'header'
+            'nav'
+            'corpo'
+            'rodape ';
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="grid">
+            <div><h1>LOGO</h1>
+            <nav>menu</nav></div>
+            <div><nav><ul style="list-style-type: none;">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul></nav></div>
+            <div>
+                <h1>Olá Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci mollitia enim expedita, hic tenetur distinctio veniam sit blanditiis libero fugiat. Nulla vel modi cupiditate illo non velit voluptatem animi odio? Autem, itaque quo nulla voluptatibus beatae obcaecati? Alias, nam! Sint pariatur aliquid tempora optio quia corporis itaque, fugiat omnis voluptatibus ipsam esse voluptatem est debitis voluptatum ea corrupti nisi modi rerum recusandae, illum incidunt! Deleniti, ipsam ipsa corrupti, recusandae dicta, architecto optio nihil magni nesciunt quaerat ad et? Molestias doloribus quo tempore aspernatur iusto, illo cupiditate exercitationem ipsam! Nostrum iure maxime, explicabo, ea itaque eligendi repellendus labore accusantium aliquid maiores illum omnis eum atque vero cumque deserunt sapiente rem voluptate et deleniti commodi exercitationem minima accusamus. Earum fuga alias soluta enim! Ipsa omnis excepturi illum vitae. Recusandae odit commodi iusto corporis. Vel ex, velit laborum harum, fuga animi explicabo deserunt aperiam maxime debitis ullam facilis in cum et vero ea asperiores? Saepe voluptatem porro explicabo magni nobis, quas cum consequatur, a soluta necessitatibus ab odit. Necessitatibus quisquam repudiandae, error odit ratione ad pariatur tenetur. Enim facere obcaecati laborum dolor neque quis, omnis placeat natus fuga, similique, cupiditate fugiat est soluta fugit. Dolores omnis, odio ullam veritatis culpa fuga! Ipsa eos aliquid rerum iure totam. Unde veritatis adipisci perferendis, repudiandae dicta dolores quae, consequatur sit enim magnam suscipit nostrum hic non ex, molestias accusamus amet vero atque quisquam impedit modi tempore ut dolor. Porro mollitia sit omnis nihil reprehenderit inventore vel consequuntur ex dolorem. Odio animi vitae est reiciendis placeat!</p></div>
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, earum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla atque, eaque aperiam maiores enim culpa porro laborum alias eligendi facere!</div>
+        </div>
+</div>
+</body>
+</html>
