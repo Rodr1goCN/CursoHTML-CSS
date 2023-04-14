@@ -9,6 +9,7 @@
     --cor1: #0a1128;
     --cor2: white;
     --cor3:#EEEEEE;
+    --cor4: crimson;
     --gap: 3rem;
 }
 
@@ -35,8 +36,8 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
-    border-bottom: 1px solid var(--cor3);
+    height: 6.6rem;
+    border-bottom: 0.1rem solid var(--cor3);
 }
 
 .menu h1{
@@ -53,7 +54,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 95px;
 }
 
 .menu ul{
@@ -72,11 +72,11 @@ body{
     content: '' ;
     position: absolute;
     bottom: 0;
-    left: -5px;
+    left: -0.1rem;
     width: 100%;
     height: 0.3rem;
-    background-color: crimson;
-    transition: all 300ms ease-in-out
+    background-color:var(--cor4);
+    transition: all 300ms ease-in-out;
 }
 .menu ul li a:hover::after{
     width: 50%;
@@ -108,7 +108,7 @@ h3{
 }
 
 .main-bg{
-    background-image: url('../img/main-bg3.svg');
+    background-image: url('../img/main-bg4.svg');
     background-size: cover;
     background-position:center center;  
     color: var(--cor2);
@@ -117,12 +117,36 @@ h3{
 .main-content{
     width: 100vw;
     height: 100vh;
-    max-width: 1200px;
+    max-width: 90rem;
     margin: auto;
     padding: var(--gap);
-    padding-top: 80px;
+    padding-top: 6.6rem;
 }
 
 .white-bg{
     background-color: var(--cor2);
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-content: center;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-content h2{
+   margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-content > p{
+   
 }
