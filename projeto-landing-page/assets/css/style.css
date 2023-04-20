@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -147,6 +148,52 @@ h3{
     height: auto;
 }
 
-.intro-content > p{
-   
+.top3-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap ;
+    height: 100vh;
+    gap: var(--gap);
+    align-items: center;
+    text-align: center;
+    padding-top: 18rem;
 }
+
+.top-jobs{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10rem;
+}
+
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 2.2rem;
+    position: relative;
+    padding-left: 6rem;
+    padding-bottom: 4rem;
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -1rem;
+    transform: rotate(8deg);
+}
+
