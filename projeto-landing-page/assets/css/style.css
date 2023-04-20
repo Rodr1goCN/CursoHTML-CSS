@@ -134,7 +134,7 @@ h3{
     align-content: center;
     gap: var(--gap);
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-content h2{
@@ -145,13 +145,14 @@ h3{
 
 .intro-img img{
     max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .top3-content{
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap ;
+    flex-flow: column;
+    flex-wrap: nowrap;
     height: 100vh;
     gap: var(--gap);
     align-items: center;
@@ -168,7 +169,7 @@ h3{
 .grid-one-content{
     display: flex;
     flex-flow: column wrap;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
 }
 
