@@ -118,7 +118,7 @@ h3{
 .main-content{
     width: 100vw;
     height: 100vh;
-    max-width: 90rem;
+    max-width: 100rem;
     margin: auto;
     padding: var(--gap);
     padding-top: 6.6rem;
@@ -198,3 +198,26 @@ h3{
     transform: rotate(8deg);
 }
 
+.grid-one-content p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.img-container{
+    position: relative;
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.1) rotate(2deg);
+}
