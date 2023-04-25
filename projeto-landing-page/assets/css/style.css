@@ -362,5 +362,5 @@ footer a{
 .link-footer:hover::after{
     width: 100%;
     left: -1%;
-    border:0.2rem solid var(--cor4);
+    border:0.2rem solid var(--cor5);
 }
