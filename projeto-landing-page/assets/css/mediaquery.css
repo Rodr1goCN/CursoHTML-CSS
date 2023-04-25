@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media  (max-width: 800px) {
+    .intro-content, .grid, .intro-content2{
+        grid-template-columns: 1fr;
+    }
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .gallery-img img{
+        width: 100%;
+    }
+}

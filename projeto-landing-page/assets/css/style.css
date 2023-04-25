@@ -119,7 +119,7 @@ h3{
 
 .main-content{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100rem;
     margin: auto;
     padding: var(--gap);
@@ -139,7 +139,7 @@ h3{
     min-height: 100vh;
 }
 
-.intro-content2{
+.intro-content2{ /* css da parte contact */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-content: center;
@@ -177,7 +177,7 @@ h3{
     display: flex;
     flex-flow: column;
     flex-wrap: nowrap;
-    height: 100vh;
+    min-height: 100vh;
     gap: var(--gap);
     align-items: center;
     text-align: center;
