@@ -36,8 +36,8 @@
         content: '≡' ;
         position: fixed;
         z-index: 2;
-        top: 1rem;
-        right: 1rem;
+        top: 1.5rem;
+        right: 1.5rem;
         font-size: 3rem;
         background-color: var(--cor1);
         color: var(--cor3);

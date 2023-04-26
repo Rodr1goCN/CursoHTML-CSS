@@ -351,7 +351,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
-    margin: 3rem;
+    padding-top: 3rem;
 }
 
 footer a{
@@ -381,8 +381,8 @@ footer a{
     position: fixed;
     color: var(--cor3);
     font-size: 1.8rem;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     background-color: var(--cor1);
     width: 4rem;
     height: 4rem;
