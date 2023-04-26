@@ -31,6 +31,14 @@ body{
     overflow-x: hidden;
 }
 
+.close-menu{
+    display: none;
+    /* position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0; */
+}
+
 .menu{
     background-color: var(--cor2);
     position: fixed;
@@ -38,8 +46,11 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    height: 6.6rem;
     border-bottom: 0.1rem solid var(--cor3);
+}
+
+.menu-spacing{
+    height: 6.6rem;
 }
 
 .menu h1{
@@ -74,7 +85,7 @@ body{
 .menu ul li a::after{
     content: '' ;
     position: absolute;
-    bottom: 0;
+    bottom: -0.2rem;
     left: 0;
     width: 100%;
     height: 0.3rem;
@@ -363,4 +374,21 @@ footer a{
     width: 100%;
     left: -1%;
     border:0.2rem solid var(--cor5);
+}
+
+.back-to-top{
+    display: flex;
+    position: fixed;
+    color: var(--cor3);
+    font-size: 1.8rem;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--cor1);
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(-90deg);
 }
